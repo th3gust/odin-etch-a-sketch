@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <script type="module" src="./script/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/south-park" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Etch-a-sketch</h1>
+    </header>
+    <main>
+        <section class="menu">
+            <button type="button" id = 'black'>Black</button>
+            <button type="button" id = 'rainbow'>Rainbow</button>
+            <button type="button" id = 'erase'>Erase</button>
+            <button type="button" id = 'clear'>Clear</button>
+            <span id = 'show-resolution'>16 x 16</span>
+            <input type="range" id="resolution" min="1" max="64" value = '16'>
+        </section>
+        <section class="sketch"><div class="grid"></div></section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body, button{
+    font-family: 'South Park', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: rgb(222, 220, 220);
+}
+
+
+header h1{
+    margin-block: 1rem 4rem;
+    font-size: 6rem;
+}
+
+main{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: -26rem;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    height: 60rem;
+    box-shadow: .5rem .5rem 4rem black;
+    margin-bottom: 1rem;
+}
+
+.box{
+    border: 1px solid rgb(222, 220, 220);
+    text-align: center;
+    transition: .3s ease;
+    background-color: white;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    align-items: start;
+    justify-content: start;
+}
+
+#show-resolution, #resolution{
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+  
+#resolution{
+    appearance: none;
+    margin-top: -3rem;
+}
+
+#resolution::-webkit-slider-thumb {
+    width: 1.6rem;
+    -webkit-appearance: none;
+    height: 1.6rem;
+    border-radius: 100%;
+    background: black;
+}
+
+.menu button{
+    padding: 2rem;
+    width: 20rem;
+    height: 5rem;
+
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: .3s ease;
+
+    border-radius: 1rem;
+}
+
+.menu button:hover{
+    transform: scale(1.1);
+    filter:grayscale(50%)
+}
+
