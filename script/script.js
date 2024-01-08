@@ -43,7 +43,7 @@ el.buttons.forEach( button =>{
     button.addEventListener('click', selectedColor)
 })
 
-let opacity = 0.1; // Inicializa a opacidade
+let opacity = 0.1;
 
 function changeColor({target}){
     const colorButtons = {
@@ -54,13 +54,10 @@ function changeColor({target}){
     if (clicked){
         target.style.backgroundColor = colorButtons[color]
 
-                // Aumenta a opacidade em 0.1 a cada passada
                 target.style.opacity = opacity.toString();
         
-                // Incrementa a opacidade para o próximo passo
                 opacity += 0.1;
         
-                // Resetar a opacidade para 0.1 quando atingir 1
                 if (opacity > 1) {
                     opacity = 0.1;
                 }
